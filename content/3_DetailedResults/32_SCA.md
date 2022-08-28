@@ -7,9 +7,9 @@ weight: 2
 # Software Composition Analysis
 It's no secret that developers don't like to reinvent the wheel. It is therefore a good thing that there are many wheels available out there *for free*: online repositories such as Maven and Npm host literally millions of packages and libraries that will enable you to create PDFs, manage secure connections or draw fractals (and many more) at the cost of a single *Include* in your project file. 
 
-What's often overlooked, though, is that by adding those third-party libraries to your code, you become dependent on them: what happens the package's developer loses interest and stops maintaing it? What if you encounter a rare bug that needs urgent solving? What will you do if this 5-years old library stops working when you upgrade your app to the latest version *.Net Core*? ***Obsolescence*** of third-party code is a very real threat to many IT departments... and it's not the only one.
+What's often overlooked, though, is that by adding those third-party libraries to your code, you become dependent on them: what happens when the package's developer loses interest and stops maintaing it? What if you encounter a rare bug that needs urgent solving? What will you do if this 5-years old library stops working when you upgrade your app to the latest version *.Net Core*? ***Obsolescence*** of third-party code is a very real threat to many IT departments... and it's not the only one.
 
-By the way, when you downloaded this nifty tool that makes colorful worksheets from your data, did you really read the *License Agreement* that it came with? You know, the one that says that the app you're now selling should be entirely *Open-Sourced*. Many development teams don't worry about this and they sometimes end up creating situations that would make an IP lawyer faint. ***Licensing Risks*** hiding behind proprietary applications embedding open-source code are an ever growing area of concern for organizations.
+By the way, when you downloaded this nifty *tool-that-makes-colorful-worksheets-from-your-data*, did you really read the *License Agreement* that it came with? You know, the one that says that the app you're now selling should be entirely *Open-Sourced*. Many development teams don't worry about this and they sometimes end up creating situations that would make an IP lawyer faint. ***Licensing Risks*** hiding behind proprietary applications embedding open-source code are an ever growing area of concern for organizations.
 
 Furthermore, what would happen if this core open-source library that everybody uses had a massive [security weakness](https://www.ncsc.gov.uk/information/log4j-vulnerability-what-everyone-needs-to-know) that potentially [exposes the data](https://heartbleed.com/) of thousands of companies? There's a lot of publicly available information out there to help us prevent that, but are we using it? ***Security Vulnerabilities*** embedded into open-source libraries are something companies can't afford to miss... especially if they're in the process of moving their applications to a place where they can be reached much more easily (aka *the Cloud*).
 
@@ -24,7 +24,7 @@ There's lots going on here:
 - There are a handful of ***High-Risk Licenses***
 - There are a number of ***High and Critical Severity Security Vulnerabilities*** related to those packages
 
-Let's start with the ***Vulnerabilities*** subtab
+Let's start with the ***Vulnerabilities*** subtab:
 
 ### CVEs and CWEs
 According to the US [National Institute of Standards and Technology](https://nvd.nist.gov/vuln), *The Common Vulnerabilities and Exposures ***(CVE)*** Program’s primary purpose is to uniquely identify vulnerabilities and to associate specific versions of code bases to those vulnerabilities.*

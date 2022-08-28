@@ -32,21 +32,41 @@ For each application having scan results, CAST Highlight blends relevant Softwar
 - ***Software Health*** scores and benchmarks (Resiliency, Agility, Elegance)
 - ***Open Source Safety*** scores and benchmarks (vulnerabilities, license risk, obsolescence)
 
-You can access an application's individul assessment by clicking on the little crosshair next to the recommendation:
+You can access an application's individual assessment by clicking on the little crosshair next to the recommendation:
 ![Rearchitect](/images/PortfolioCloud-3.png)
-
+There we see that while *Rearchitect* is the winning segment for this one, *Rehost* comes close second. Since nothing should be set in stone (especially when it has been computed fully automatically), you have the ability to alter the target segment for a particular app when building your migration plan.
 ## Planning the journey
+Speaking of which, it's nice to know what we'd like to achieve ultimately for those apps, but that may still be a daunting task. What's our short-term plan?
 ### Where to start?
+Click on the ***Decision Matrix*** tab and you'll see that you get a graph where:
+- Each bubble represents an application
+- Its size is the number of *Roadblocks* identified in its CloudReady assessment
+	- You may go ahead and change this to represent the estimated effort or the number of code lines by using the listbox on the top right of the graph
+- Its position on the y-axis is its *Business Impact*: apps at the top are more important
+- Its position on the x-axis is given by its *CloudReady score*: apps on the right are quite ready to move
+
+We then naturally see 4 quadrants emerging from this:
 ![Decision Matrix](/images/PortfolioCloud-4.png)
+- ***Quick Wins*** are apps that you can probably migrate relatively easily... and if you hit a few bumps along the way, you'll be glad that they aren't vital to your business. Those are the best ones to start your cloud journey with and have your teams gain some experience.
+- ***Core Cloud*** apps are also quite ready to migrate, but their business criticality means that you'll probably want to tackle them in second.
+- ***Long-term Bets*** are your real problems. Core-business apps (i.e. you really want them to leverage all the Cloud's capabilities) with significant hurdles to overcome before they can move. Those aren't going to be ready within a few sprints... but that's OK: we happen to have a tool which can direct our team's effort where they are needed and where we will be able to monitor the progress as we see those bubbles migrate to the right side of the chart.
+- ***Pursue Later*** sit at the tail end of the journey... and it could well be that their voyage doesn't lead to the Cloud at all as they're also often good candidates for replacement.
+
 ### Where to go?
+Wouldn't it be nice to have an idea of what our cloud landscape will look like? The ***Cloud Service Recommendations*** we saw at the application level are consolidated in the ***Recommendations*** tab. Checking out the AWS platform we can see which flavor of services we're going to end up using and how much of each:  
 ![Service Recommendations](/images/PortfolioCloud-5.png)
 
 ### Solving issues
+Likewise, all of the ***Blockers*** and ***Boosters*** identified on all the apps are brought together in the ***Cloud Requirements*** tab. You can see that several of them are not *agnostic* but in fact limited to a specific cloud provider. Clicking on the number of affected apps for a requirement brings up the list of said apps: 
 ![Boosters](/images/PortfolioCloud-6.png)
+When it comes to *Blockers* you also get the total number of *Roadblocks* and the estimate of the cost to fix those:
 ![Blockers](/images/PortfolioCloud-7.png)
+This is where you can make strategic decisions about how to tackle some issues, for example assigning a transverse team of experts to fix a specific blocker throughout the whole portfolio.
 
 ### Catering to specific needs
+Like for *Cloud Requirements*, if your migration strategy involves some systematic *Containerization* of apps, clicking on that tab will take you to the consolidated list of requirements:
 ![Containerization](/images/PortfolioCloud-8.png)
+And here's another use case: after some initiatives were made locally, you now have to deal with multiple cloud providers and as you want to make your life easier you'd like to know if it's possible to bring them all together on AWS. It'll certainly be more convenient, but can we guarantee a smooth transition? Click on the ***Multi-Cloud*** tab and see what you'll need to get out of the way before you can ensure a seamless move.
 ![Multi-Cloud](/images/PortfolioCloud-9.png)
 
 ### Making waves
@@ -54,3 +74,15 @@ Unless you clearly understand the boundaries and technical interactions of each 
 In the top menu's ***DASHBOARDS***, choose ***Application Links*** to explore the relationships declared between the apps:
 ![App Dependencies](/images/PortfolioCloud-10.png)
 Selecting applications you intend to migrate, you can immediately see which ones are in their adhenrence and might be impacted by the next wave of migrations.
+
+## How easy is this?
+Let's take a moment to think about what we have seen here: we can go from *"I have 200 applications which I want to move to that Cloud thing, but I have no idea where to start or what to do"* to having
+- A clear target 5R-segment for each application
+- A roadmap of which apps to handle first and what the impact of migrating them will be 
+- Detailed insights into each application's requirements and solid estimates of the effort needed to comply with them.
+
+... and for 200 apps, all of this can be gathered ***within a couple of weeks***.
+
+### Onto the OSS
+We're planning to move a lot of items here so we should probably look at the baggage they're taking along...  
+
