@@ -5,6 +5,7 @@ weight: 2
 ---
 
 # Open-Source Safety
+Migrating a poor. Going back to the ***HOME*** page, click on the black ***Open Source Safety*** tile. You'll reach the dashboards where all the ***Software Composition Analysis*** intel is collated at portfolio-level. 
 
 ## Divide and Conquer
 When it comes to managing the risks of using of Open Source, the primary user of insights may differ for security vulnerabilities (infosec and development teams), license risk (legal and compliance teams) or technology obsolescence (development and maintenance teams).
@@ -14,14 +15,39 @@ Prioritization is also extremely important, especially when considering that man
 This is where CAST Highlight can help using the ***Portfolio Advisor for Open Source*** to automatically segment and prioritize your application portfolio with recommendations of the critical actions to take for each type of audience.
 ![Divide and Conquer](/images/PortfolioSCA-1.png)
 
+The six Portfolio Advisor for Open Source segments recommend specific actions to take on applications and are defined as follows:
+-***Immediate attention***: These applications are important to the organization and have multiple 3rd party component risks which include two or more of the following: security vulnerabilities, risky licenses, obsolete components.
+-***Fix Vulnerabilities***: These applications are important to the organization and are using 3rd party components that have critical or high severity security vulnerabilities.
+-***Evaluate Legal Risk***: These applications are important to the organization and are using 3rd party components that have risky licenses.
+-***Upgrade Components***: These applications are important to the organization and are using 3rd party components that are out of date or obsolete creating operational risk.
+-***Consider Alternate Components***: These applications are less important to the organization and have multiple 3rd party component risks which include two or more of the following: security vulnerabilities, risky licenses, obsolete components.
+-***Role Models***: These applications are using 3rd party components that have low risk for the organization.
+
+When you click on the ***See Applications*** button at the bottom you should be able to find the two apps we scanned. 
 ![Divide and Conquer](/images/PortfolioSCA-2.png)
+{{% notice tip %}}
+If recent changes have been made that might affect the recommendations, you can trigger them to be recalculated by clicking on the ***Compute*** button at the top right of the graph.
+{{% /notice %}}
+
+Just like in the *Cloud Readiness* portfolio advisor, clicking on the little crosshair icon shows you why that particular recommendation is assigned to any app and you can override it. 
 
 ![Divide and Conquer](/images/PortfolioSCA-3.png)
 
 ## Components overview
+If you're trying to set up or enforce good practices for third-party libraries management within your organization, it sure will help to have some overview of what you're dealing with. Click on the ***Components*** tab:
 ![Divide and Conquer](/images/PortfolioSCA-4.png)
 
+Here are a few things you can find out with just a couple clicks:
+- which package are we using the most different versions of? (it would probably make sense to standardize that bit)
+- which applications are using that package?
+- which library has the most CVEs?
+- sorting by the ***Status*** column, are we using components that are in the ***Deny List***? Portfolio managers can black-and-whitelist libraries according to their own policies. You can have a peek at that functionality by going into the ***MANAGE PORTFOLIO*** menu and choosing ***Manage Component Catalog***.
+
 ## License Management
+Let's talk about the licensing risk, in the dashboard's menu (if you strayed away you can find your way back to the OSS dashboard using the ***DASHBOARDS*** menu and selecting ***Software Composition***), click on the ***Licenses*** tab:
 ![Divide and Conquer](/images/PortfolioSCA-5.png)
 
-### Onto the overall Health
+Just as we did for managing components, after a long talk with your IP lawyer, you can define spcifically which types of licenses are and aren't acceptable for your organization by going into the ***MANAGE PORTFOLIO*** menu and selecting ***Manage License Profiles***.
+
+### Onto more demographics
+There's still quite a number of high-level insights for us to look at. In the main ***DASHBOARDS*** menu, let's choose ***Portfolio Demographics***...
