@@ -32,12 +32,36 @@ Questions like this naturally arise when looking at such pie charts and they ope
 Notice that you can get this kind of breakdown for any survey question (see the selector in the top right). This should definitely help with ***Portfolio Rationalization***.
 
 ## Another Decision Matrix
-So we have many ways to cater
-![Divide and Conquer](/images/PortfolioHealth-3.png)
+We have many ways to cater to the interests of a portfolio manager. Another one would be to simply answer the question ***How do I manage my application's quality from here?***. Click on the top menu's ***HOME*** tab from the landing page, click on the ***SOFTWARE HEALTH*** tile.
+![Quality bubbles](/images/PortfolioHealth-3.png)
+You see here that we have another one of these bubble matrices, here comparing *Software Resiliency* to *Business Impact*... and once again we find 4 quarters:
+- In the bottom right: applications that are healthy and relatively unimportant. We'll leave them be.
+- In the bottom left: applications that are unhealthy and unimportant -- good candidates for that rationalization we just talked about.
+- In the top right: applications that healthy and business-critical. That's good news, but we probably want to keep monitoring them (did you notice there's a ***Trends*** dashboard?)
+- In the top left: our *problem area* -- we have to do something about those. Clicking on a bubble takes us to the app list, and clicking on the app name brings us back to the application's results dashboard. 
+	- From there, as we saw earlier, we'll be able to see where that low health comes from, match it to *improvement opportunites* on the *Code Insights* page. 
+	- Maybe use the *Export to Excel* feature to give those to the app's dev team so they can use that insight to put together an action plan to improve the application's health.
+
+{{% notice tip %}}
+These matrices that place applications on 2-dimensional grid can be generated at will, using any metric known inside CAST Highlight (including custom KPIs derived from custom survey answers). Check it out by going from the top menu into ***DASHBOARDS->Custom Dashboard***.
+{{% /notice %}}
 
 ## Technical Debt
+The last metric we should visit is in the ***DASHBOARDS*** top menu tab, under ***Technical Debt***.
 
-![Divide and Conquer](/images/PortfolioHealth-4.png)
+Technical Debt represents the effort required to fix problems that remain in the code when an application is released. This concept is popular in many use cases that Software Intelligence supports: Application Portfolio Rationalization, Software Health Assessment, Tech Due Diligence, etc. 
+
+Technical Debt estimates rely exclusively on CAST Highlight’s code insights and their respective number of occurrences found during the code scan. For each improvement opportunity we have a standard value for the time it takes to remediate it (those can also be customized to be tailored to your organization's skills). The total *technical debt* of an application is just the sum of them all.
+
+In the dashboard's menu, click on the ***Portfolio Advisor for Technical Debt*** tab and check out how you can explore where that debt actually comes from:
+![Where does my debt come from?](/images/PortfolioHealth-4.png)
+Can you find out
+- which technology bears the most technical debt?
+	- (in the right panel, drag he *Technology* box to first position)
+- across all COBOL apps, which app bears the most debt?
+	- (on the color wheel, click on the COBOL section and you'll see the wheel zoom in and a top 5 of apps appear on the right)
 
 ### Wrapping it up
-We are reaching the end of our journey together...
+Well, that was lot of screens and data to digest in such a short time. Feel free to come back on the examples we showed or just explore around the interface at your leisure. 
+
+We are reaching the end of our journey together... or is it just the start?
