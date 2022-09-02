@@ -9,11 +9,11 @@ weight: 3
 After reviewing the application's *Cloud Readiness* and the risks borne by its dependencies, we still have to look at the quality of the custom code itself. From the application's dashboard menu, click on the ***Health Distribution*** tab.
 ![Health distribution](/images/DetailedHealth-1.png)
 
-Before we talk about the KPIs and their meaning, let's use this screen to notice that our application is, by and large, a Java application. Given that its overall health scores are a weighted average of health scores computed for each technology, Java code quality will be the most important driver of said scores. This doesn't mean that other languages should be ignored, though: the abysmal Resiliency score for JavaScript would certainly warrant an investigation.
+Before we talk about the KPIs and their meaning, let's use this screen to notice that our application is, by and large, a Java application. Given that its overall Health scores are a weighted average of Health scores computed for each technology, Java code quality will be the most important driver of said scores. This doesn't mean that other languages should be ignored, though: the abysmal Resiliency score for JavaScript would certainly warrant an investigation.
 
 ## Key Health Metrics
 
-The core health metrics provided by Highlight are the following:
+The core health metrics provided by CAST Highlight are the following:
 | Key Metric | Description | Direct Interpretation | Business Impact |
 |---|---|---|---|
 | ***Software Resiliency*** |  Measure the robustness and how bullet-proof is the Software against production failure | Reflects presence of code patterns that may comprise vulnerability of the software | Customer Satisfaction, Confidence and Loyalty. Opportunities & Revenue |
@@ -30,16 +30,16 @@ The top line shows us the Resiliency score for Java, the distribution of files a
 On the left side, we have our ***Improvement Opportunities***: coding good practices where the app could use some work. You can see the relative importance of each best practice in the *Contribution* column as well as an idea of how well this app performs vs the field.
 
 {{% notice tip %}}
-The CAST Highlight ***Benchmark*** is based on consistent, precise, machine analysis of over 15000 applications, which makes it possible to optimize your application portfolio and prioritize software development efforts by comparing your applications against other organizations in the same industry. 
+The CAST Highlight ***Benchmark*** is based on consistent, precise, machine analysis of over 15,000 applications, which makes it possible to optimize your application portfolio and prioritize software development efforts by comparing your applications against other organizations in the same industry. 
 {{% /notice %}} 
 
 Clicking on an individual quality rule, we can see in which files this problem has been identified:
 ![Health distribution](/images/DetailedHealth-3.png)
-And if you have questions or wish to know more about the particulars of a quality rule, click on the little question mark next to it and you'll be taken to the our extensive documentation detailing what the rule is, how it is detected by Highlight and what is the impact it can have for you. 
+And if you have questions or wish to know more about the particulars of a quality rule, click on the little question mark next to it and you'll be taken to documentation detailing what the rule is, how it is detected by CAST Highlight and what is the impact it can have for you. 
 
-This trove of information follows the same simple goal as what we saw earlier: *provide detailed **actionable insight** for development teams to help them make **better software***.
+This trove of information follows the same simple goal as what we saw earlier: *provide detailed **actionable insights** for organizations to make **informed software decisions***.
 
-Speaking of development teams, they might find that it's not practical for them to approach health issues *by rule*, preferring to focus on critical areas of the codebase that need the most work. This is what the right side of this screen does: it presents you with files that are the best ***candidates for improvement***. Clicking on the file's name, you can see the list of topics that require fixing:
+It might not be practical to approach health issues *by rule*, but instead focus on critical areas of the codebase that need the most work. This is what the right side of this screen does: it presents you with files that are the best ***candidates for improvement***. Clicking on the file's name, you can see the list of topics that require fixing:
 ![Health distribution](/images/DetailedHealth-4.png)
 Because if you're going to work on a file to improve something, you might as well get rid of all the issues in there.
 ## How maintainable is it?
@@ -53,12 +53,12 @@ We have spent some time drilling down through every aspect of this application, 
 
 Go back to the applications list (for instance through the top menu, by clicking on ***DASHBOARDS*** and then ***Applications Results***) and find the *Flight Booking* application.
 {{% notice tip %}}
-You can sort tables by any column (ascending or descending) and this one also provides a search box for when the portfolio is getting big.
+You can sort tables by any column (ascending or descending) and this one also provides a search box for when the portfolio is large.
 {{% /notice %}}
-Once you've reached the individual application's dashboard, check out that ***PPT Report*** button in the top right:
+Once you've reached the individual application's dashboard, check out the ***PPT Report*** button in the top right:
 ![A fullyy automated report](/images/DetailedHealth-5.png)
 
-Go ahead and request a Powerpoint report containing the data of your choosing. In a matter of minutes, you'll get a complete automated report containing all the application's detailed intel ready to download or conveniently delivered to your mailbox.
+Go ahead and request a Powerpoint report containing the data of your choosing. In a matter of minutes, you'll get a complete automated report containing all the application's detailed insights ready to download or conveniently delivered to your mailbox.
 
 ## Onto the big picture
-Now that we've seen the details of what CAST Highlight does, it's time for us to take some altitude...
+Now that we've seen the details of what CAST Highlight does, it's time for us to get some altitude...
