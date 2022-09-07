@@ -34,4 +34,4 @@ Plan on taking about 1.5 hours to complete the full workshop.
 
 ## Additional Help 
 
-For any additional help, please reach out to CAST Support Team: aws-workshops@castsoftware.com 
+For any additional help, please reach out to CAST Support Team: AWS.contact-me@castsoftware.com

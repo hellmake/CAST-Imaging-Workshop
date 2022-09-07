@@ -30,7 +30,7 @@ Questions like this naturally arise when looking at such pie charts and they ope
 Notice that you can get this kind of breakdown for any survey question (see the selector in the top right). This should definitely help with ***Portfolio Rationalization***.
 
 ## Another Decision Matrix
-We have many ways to cater to the interests of a portfolio manager. Another one would be to simply answer the question ***How do I manage my application's quality from here?***. Click on the top menu's ***HOME*** tab from the home page, click on the ***SOFTWARE HEALTH*** tile.
+We have many ways to cater to the interests of a portfolio manager. Another one would be to simply answer the question *How do I manage my application's quality from here?* Click on the top menu's ***HOME*** tab from the home page, click on the ***SOFTWARE HEALTH*** tile.
 ![Quality bubbles](/images/PortfolioHealth-3.png)
 Here is another useful bubble chart comparing *Software Resiliency* to *Business Impact*... and once again we find 4 quadrants:
 - In the bottom right: applications that are healthy and relatively unimportant. We'll leave them be.
