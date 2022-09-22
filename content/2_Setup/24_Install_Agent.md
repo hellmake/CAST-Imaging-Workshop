@@ -10,6 +10,21 @@ As a ***SaaS*** product, **CAST Highlight** doesn't require any web server to ru
 
 To that end, we will be performing the actual analysis of the applications' source code locally and we'll upload the results of the scan to the SaaS portal, which only contains meta-data.
 
+## Requirements
+This step requires access to a windows-based OS. 
+
+{{% notice info %}}
+ The ***CAST Highlight Agent*** can actually run on any OS with Java but will be limited to *command-line only* mode unless we use the Windows-based GUI. For the simplicity of this workshop, we'll stick to that version but rest assured that the command-line can easily be run on Linux, MacOS or a Docker container and be seamlessly integrated into your CI/CD pipeline.
+{{% /notice %}}
+
+If your machine is not Windows-based, we can quickly spin one up on EC2. A complete tutorial on how to do this is available [here](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html). It basically boils down to: 
+- Launching a fresh instance (we recommend using the *Microsoft Windows Server 2019 Base* AMI of type *t3.large*)
+- Creating a private key (.pem) file
+- Decrypting the administrator password
+- RDPing to the machine and installing your favourite browser.
+
+From there, you can log in to your freshly minted account at https://demo.casthighlight.com and proceed to the next step.
+
 ## Downloading the Agent
 
 From the ***Application Scans*** page you can simply click on the **Download Agent** button and save the agent on your machine.

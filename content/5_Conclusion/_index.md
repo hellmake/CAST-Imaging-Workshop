@@ -19,6 +19,8 @@ For more in-depth tutorials on the advanced features of CAST Highlight, visit ou
 
 You can even get certified through our [CAST Highlight Certification Program](https://doc.casthighlight.com/certification/).
 
+An AWS prescriptive guidance for CAST Highlight is available [here](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/assess-application-readiness-for-migration-to-the-aws-cloud-by-using-cast-highlight.html).
+
 ## Diving even deeper into applications using CAST Imaging
 
 For those applications that require deep architecture review, modernization, re-documentation or structural quality assessment, check out [CAST Imaging](https://www.castsoftware.com/products/imaging): it's like *Google Maps* for your code!

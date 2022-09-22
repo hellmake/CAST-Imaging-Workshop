@@ -8,19 +8,9 @@ weight: 1
 
 ## Requesting an account
 
-Go to <https://doc.casthighlight.com/certification-test/>
+All you need to do is fill in this form and click on *Enroll User*:
 
-You should encounter this form:
-![The Account Request Form](/images/Register-1.png)
-
-Select a domain. Here we'll go with "CAST Customers".
-![Domain Selection](/images/Register-2.png)
-
-Then select the AWS-Workshop subdomain and enter your e-mail address.
-![E-mail Entered](/images/Register-3.png)
-
-Finally, click on "Enroll User" and you'll be good to go.
-![Success](/images/Register-4.png)
+{{< accountForm requestAccount >}}
 
 ## Activating the account
 You should receive an automated e-mail informing you that you have been registered in CAST Highlight and offering you to activate your account.
@@ -39,7 +29,14 @@ Then click on "Save" and you'll be able to log in to the CAST Highlight SaaS pla
 And there we are: the CAST Highlight home page!
 ![Here we are](/images/Register-8.png)
 
+## The web portal
+You may not be seeing the exact same screen as what's shown above -- maybe your home page shows that you have 0 applications. Here's what's happening:
+![Portfolio Organization](/images/Register-9.png)
+
+If you're only seeing grey tiles, you can toggle which subdomain to explore by clicking on the little funnel icon in the top right and selecting the ***Ready-Only Environment***.
+![Subdomain Switcher](/images/Register-10.png)
+![Subdomain Switcher2](/images/Register-11.png)
+While your environment is empty (for the time being), you'll notice that the *read-only* one is quite crowded.
+
 ### Onto application scanning
 There's a lot to discover here, and we will get to it. But first, we want to scan some code...
-
-

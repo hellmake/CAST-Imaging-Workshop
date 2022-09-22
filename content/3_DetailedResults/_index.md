@@ -15,7 +15,7 @@ After completing these steps:
 we can move on to exploring the insights for the applications.
 
 {{% notice info %}}
-This workshop follows a bottoms-up approach, which means that we'll first explore the individual results for the applications we just scanned and then we'll see how they are consolidated into the whole portfolio. Following this workflow, you'll see a lot of information about the other apps and the whole portfolio. Worry not - we'll get to that in the next chapter.
+This workshop follows a bottoms-up approach, which means that we'll first explore the individual results for the applications we just scanned and then we'll see how they are consolidated into the whole portfolio. Following this workflow, you may see information about the other apps and the whole portfolio. Worry not - we'll get to that in the next chapter.
 {{% /notice %}}
 
 ## Chapter Overview

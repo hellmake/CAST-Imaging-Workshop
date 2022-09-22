@@ -22,7 +22,10 @@ As much as these situations denote very different levels of cloud adoption and m
 Let's go back to the home page of the CAST Highlight portfolio. This can always be done by clicking on the ***Home*** button in the top menu:
 ![Home](/images/BP-Cloud-1.png)
 
-We're now looking at the overall results of a 200+ application portfolio. The following sections demonstrate how you can use all the portfolio-level information gathered in CAST Highlight to guide your strategic IT decisions.
+From here, we want to switch our attention to the *Read-Only Environment* by clicking on the funnel icon in the top right:
+![Subdomain Switcher](/images/Register-10.png)
+
+We're now looking at the overall results of a ~200 applications portfolio. The following sections demonstrate how you can use all the portfolio-level information gathered in CAST Highlight to guide your strategic IT decisions.
 {{% notice info %}}
  The applications shown in this *sandbox* portfolio are publicly shared to give an overview of all of CAST Highlight's capabilities. This portfolio is shared between all the users of this workshop. It's worth mentioning that when you do have your own CAST Highlight subscription, your portfolio will be on your own instance and none of it will be shared with other clients.
 {{% /notice %}}

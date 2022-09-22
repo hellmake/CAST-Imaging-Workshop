@@ -8,7 +8,7 @@ weight: 6
 
 The "technical" work is now done. The ***CAST Highlight Agent*** has done its job and produced scan results for both applications and we're going to upload them to our portfolio.
 
-Let's go back to the CAST Highlight web portal and click on the ***APPLICATION SCANS*** menu. Our campaign is still pending: 
+Let's go back to the CAST Highlight web portal and click on the ***APPLICATION SCANS*** menu (if you don't see this menu, remember the trick to switch to your own *subdomain*). Our campaign is still pending: 
 ![Campaign Launched](/images/Declare-7.png)
 
 ## Uploading the Code Scan Results

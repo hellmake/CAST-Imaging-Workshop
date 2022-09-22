@@ -22,8 +22,6 @@ The five Portfolio Advisor for Cloud segments are defined as follows:
 - ***Rebuild***: A recommendation to discard the code of the application and develop it again in the cloud using Platform as a Service (PaaS) or serverless using Function as a Service (FaaS).
 - ***Retire***: A recommendation to discard the application altogether or potentially replace it with a commercial Software as a Service (SaaS) alternative.
 
-You can search for our two apps in the list below to find what recommendation they received:
-![What to do](/images/PortfolioCloud-2.png)
 ### How the recommended segment is determined
 For each application having scan results, CAST Highlight blends relevant Software Intelligence insights, weights, and benchmarks together to determine the recommended segment. Here are the indicators the Portfolio Advisor for Cloud uses to establish the segmentation recommendations:
 - ***Business Impact*** scores (from the Business Impact survey)
