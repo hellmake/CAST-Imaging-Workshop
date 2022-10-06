@@ -1,10 +1,10 @@
 --- 
-title: "Accelerate the Modernization with CAST Imaging" 
+title: "Modernize non-native architectures with CAST Imaging" 
 chapter: true 
 weight: 1 
 --- 
 
-# Insert AWS services in non-native architectures
+# Modernize non-native architectures with CAST Imaging
 
 ![CAST Logo](/images/CAST_Logo.png) 
 
@@ -20,7 +20,7 @@ CAST Imaging also provides visibility of the adherence between applications : AP
 
 ## Workshop Objectives 
 
-In this workshop, you will learn how to use CAST Imaging to navigate the technical architecture of custom applications, helping you to determine how to integrate AWS cloud services in a rapid and safe way. 
+In this workshop, you will learn how to use CAST Imaging to navigate the technical architecture of custom applications, helping you to determine how to integrate AWS services in a rapid and safe way. 
 
 ## Workshop Agenda
 

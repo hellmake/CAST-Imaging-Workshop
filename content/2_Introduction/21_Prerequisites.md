@@ -10,7 +10,9 @@ weight: 1
 
 Before you start the workshop exercise, here are basic concepts to understand the visualization principles of CAST Imaging. 
 
-Please follow **[this 15 min introduction course](https://help.castsoftware.com/hc/en-us/articles/360013914719-CAST-University-for-Imaging)**.
+Please follow this 15 min introduction course.
+
+**Embedded video here**
 
 ## Documentation
 
