@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en" # Modify to change the default language/version of the site
 
-title = "Assessing Application Portfolio With CAST Highlight"
+title = "Accelerate the Modernization of critical applications with CAST Imaging"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "false"
@@ -17,7 +17,7 @@ enableEmoji = true
   # Author of the site, will be used in meta information
   author = "CAST Software"
   # Description of the site, will be used in meta information
-  description = "Assessing Application Portfolio With CAST Highlight"
+  description = "Accelerate the Modernization of critical applications with CAST Imaging"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -45,19 +45,24 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-graduation-cap'></i> CAST Highlight Certification"
-url = "https://doc.casthighlight.com/certification/"
+name = "<i class='fas fa-graduation-cap'></i> CAST Imaging Foundation Course"
+url = "https://help.castsoftware.com/hc/en-us/articles/360013914719-CAST-University-for-Imaging"
 weight = 10
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-lightbulb'></i> CAST Highlight Pattern in the AWS Prescriptive Guidance Library"
-url = "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/assess-application-readiness-for-migration-to-the-aws-cloud-by-using-cast-highlight.html"
+name = "<i class='fas fa-lightbulb'></i> CAST Imaging Pattern in the AWS Prescriptive Guidance Library"
+url = "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/analyze-and-visualize-software-architecture-in-cast-imaging.html"
 weight = 20
 
 [[menu.shortcuts]] 
-name = "<i class='fas fa-tools'></i> Sample Cloud Readiness Portfolio Assessment Report"
-url = "https://learn.castsoftware.com/download-application-portfolio-assessment-for-cloud-readiness-sample-report"
+name = "<i class='fas fa-tools'></i> Practical Guide to Accelerate Application Modernization"
+url = "https://learn.castsoftware.com/download-wp-accelerating-application-refactoring_a-practical-guide"
 weight = 30
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-play'></i> Practical Strategies & Guidance to Modernize Monoliths"
+url = "https://learn.castsoftware.com/thank-you/monoliths-microservices_modernization-practical-strategies_guidance_follow-up"
+weight = 40
 
 #[[menu.shortcuts]] 
 #name = "<i class='fas fa-graduation-cap'></i> Modernization Workshops"
