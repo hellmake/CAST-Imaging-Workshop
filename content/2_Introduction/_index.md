@@ -6,10 +6,10 @@ weight: 2
 
 # Workshop introduction
 
-The most common motions taking place in application modernization and refactoring fall under the following categories :
+The most common motions taking place in application modernization and refactoring fall under the following categories:
 
 1. Review the “as-is” architecture – Discovery of the existing application design to identify the possible hurdles, clarify the feasibility and complexity of modernization scenarios. 
-2. Plan the “go-to” architecture – A new architecture should be defined explicitly enough that developers can follow along, and architects can check compliance of implementation. This step can imply different tasks :
+2. Plan the “go-to” architecture – A new architecture should be defined explicitly enough that developers can follow along, and architects can check compliance of implementation. This step can imply different tasks:
 	
 	- Rewrite or add a component for technical or functional reasons – expose the component, reduce vulnerability, update a business rule...
 	- Integrate a new framework and leverage Cloud Native services often by replacing your custom code.

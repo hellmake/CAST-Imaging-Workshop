@@ -6,7 +6,7 @@ weight: 3
 
 # Modernization Workshop
 
-You will now go through three modernization scenarios :
+You will now go through three modernization scenarios:
 
 - Scenario 1 – you will identify whether the data access layer could be isolated and replaced with a new data access solution (Horizontal partitioning)
 

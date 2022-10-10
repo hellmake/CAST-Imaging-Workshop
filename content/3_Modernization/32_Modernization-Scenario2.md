@@ -6,11 +6,11 @@ weight: 2
 
 # Replace a custom authentication layer
 
-**Objective** :  the application ***eCommerce*** uses a custom authentication mechanism which we would like to replace with an authentication service such as AWS Identity and Access Management. 
+**Objective**:  the application ***eCommerce*** uses a custom authentication mechanism which we would like to replace with an authentication service such as AWS Identity and Access Management. 
 
 But what are the source code components involved and what are the impacts of this replacement ?
 
-**Documentation** :  This exercise will utilize the CAST Imaging *[Transactions](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Transaction+scope)* feature. 
+**Documentation**:  This exercise will utilize the CAST Imaging *[Transactions](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Transaction+scope)* and *[Data Call Graph](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Data+Call+Graph+scope)* features. 
 
 ## Identify components to be replaced 
 
@@ -34,11 +34,11 @@ Display only the MySQL tables of the view and identify the table which are holdi
 Vizualize the source code of the table named MERCHANT_USER_INFORMATION, you can see columns related to ADMIN_NAME and ADMIN_PASS. 
 ![Screenshot eCommerce search](/images/eCommerce_logonjspsrc.png)
 
-You can also verify the properties of the table MERCHANT_USER_INFORMATION : select the table and display the *Properties* section on the right-hand panel (next to *Objects*). Scroll down to the part *Associated to* then select the property named *Transactions*. 
+You can also verify the properties of the table MERCHANT_USER_INFORMATION: select the table and display the *Properties* section on the right-hand panel (next to *Objects*). Scroll down to the part *Associated to* then select the property named *Transactions*. 
 
 You can check out the list of other transactions where MERCHANT_USER_INFORMATION table is involved, they are identified by the name of the UI Page which starts the transaction.
 
-Among those transactions, several pages concern the authentication features : *changepassword.jsp*, *createcustomer.jsp*, etc. 
+Among those transactions, several pages concern the authentication features: *changepassword.jsp*, *createcustomer.jsp*, etc. 
 
 ![Screenshot eCommerce search](/images/eCommerce_properties.png) 
 
@@ -55,14 +55,16 @@ We have seen in the previous workshop how to Save, Document and Export a view in
 
 {{% notice info %}}
 Another way to save your work is to attach a *tag* to the nodes of interest. The *tag* is a keyword which can be used to find nodes through the *Search* feature > *Search a tag*. *Tags* are shared within all CAST Imaging users of the same application and appear in the properties of the node.
+Learn more on the *[Tags](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Working+with+tags)*.
 {{% /notice %}}
 
 Locate the table MERCHANT_USER_INFORMATION on the Data Call Graph view by using the *Object Search* button.
 
 ![Screenshot Recipe Scenario 2](/images/eCommerce_objsearch.png)
 
-Select the nodes in link with MERCHANT_USER_INFORMATION : there are 3 Hibernate Entities and 1 Java Hibernate Class.
-Add a *tag* to them that you can name freely. 
+Select the nodes linked with MERCHANT_USER_INFORMATION: there are 3 Hibernate Entities and 5 MySQL Unique Constraints.
+Select also the Java Class named *MerchantUserInformation* which is linked with the Hibernate Entities.
+Add a *tag* to the selected nodes that you can name freely. 
 
 ![Screenshot Recipe Scenario 2](/images/CreateTag.png) 
 ![Screenshot Recipe Scenario 2](/images/eCommerce_tag.png) 
@@ -78,5 +80,5 @@ You can now retrieve the nodes that have been tagged through the Search feature.
 
 ## Identify the impacts 
 
-**The whole call path to the *MERCHANT_USER_INFORMATION* table will need to be retested.
-The *Data Call Graph* precisely displays all objects up to the UI layer that are involved with the table.**
+**You now know that the whole call path to the *MERCHANT_USER_INFORMATION* table will need to be retested.**
+**The *Data Call Graph* feature in CAST Imaging precisely displays all objects up to the UI layer that are involved with this table.**

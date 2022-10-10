@@ -13,6 +13,11 @@ CAST Imaging features also allow to enrich this technical knowledge base with cu
 
 ![How Imaging Works](/images/howImagingWorks.png) 
 
+{{% notice info %}}
+This workshop will cover the consumption of CAST Imaging dashboard through practical exercises utilizing existing applications and highlighting the benefits of CAST insights in Application Modernization context.
+This workshop will not cover the production of CAST Imaging dashboard involving the reverse-engineering of the application source code.
+{{% /notice %}}
+
 ## CAST Imaging benefits are multiple along the application lifecycle
 
 **Safer and faster modernization** through rapid understanding of the as-is structure and confident design of the to-be architecture.

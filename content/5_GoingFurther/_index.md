@@ -24,7 +24,7 @@ weight: 5
 ### Documentation
 
 Download our *[Practical guide to Application Modernization](https://learn.castsoftware.com/download-wp-accelerating-application-refactoring_a-practical-guide?hsLang=en)* 
-and learn more about :
+and learn more about:
 
 - The five approaches to application modernization & transformation
 - The most common Analysis and Action motions used during application refactoring
@@ -34,4 +34,4 @@ Watch the *[recording](https://learn.castsoftware.com/thank-you/monoliths-micros
 
 ### Training
 
-Submit a request for CAST Imaging online courses by contacting us : AWS.contact-me@castsoftware.com
+Submit a request for CAST Imaging online courses by contacting us: AWS.contact-me@castsoftware.com

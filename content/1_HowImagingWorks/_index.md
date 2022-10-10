@@ -16,7 +16,7 @@ In fact, only a fraction of applications have been migrated to the cloud. Applic
 
 The journey begins with *[CAST Highlight](https://www.castsoftware.com/products/highlight/capabilities#capabilities)* (covered in another workshop) with which, in a week, organizations can scan the source code of hundreds of custom applications which get automatically categorized according to the Gartner 5Rs (Rehost, Refactor, Rearchitect, Rebuild and Retire), with a list of cloud blockers and remediation effort estimates, recommended AWS services, opensource risks (CVEs, obsolescence and copyleft license risks, SBOM).
 
-Then, when Modernizing to Cloud and on Cloud, CAST Imaging is crucial for critical applications in Rearchitect or Refactor scenarios to :
+Then, when Modernizing to Cloud and on Cloud, CAST Imaging is crucial for critical applications in Rearchitect or Refactor scenarios to:
 
 - Rapidly understand the AS-IS structure of an application 
 

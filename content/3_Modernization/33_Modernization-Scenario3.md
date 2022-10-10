@@ -5,11 +5,11 @@ weight: 3
 ---
 # Replace a custom logging layer   
 
-**Objective** : A dedicated logging Service such as Amazon CloudWatch needs to be integrated to make monitoring and optimization easier on the target platform.
+**Objective**: A dedicated logging Service such as Amazon CloudWatch needs to be integrated to make monitoring and optimization easier on the target platform.
 
 But how to identify the objects to be replaced ? What are the impacts of their replacement ? How to follow gradually that we break all bridges to the legacy logging layer ?
 
-**Documentation** : This exercise will utilize the CAST Imaging *[Custom Aggregations](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Creating+a+custom+aggregation+mode)* feature.
+**Documentation**: This exercise will utilize the CAST Imaging *[Custom Aggregations](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Creating+a+custom+aggregation+mode)* feature.
 
 ## Identify the components to be modified
 
@@ -87,7 +87,7 @@ You will now visualize the newly created aggregation by changing the *Perspectiv
 Double click on the *Logging Tables* node to visualize the content. You can see SQL Tables and the SQL Procedures calling them.
 ![Custom Aggregation](/images/AggView_Details.PNG)
 
-You will now add the SQL Server Procedures that are calling *Logging Tables* into a new custom node by fllowing the below steps : 
+You will now add the SQL Server Procedures that are calling *Logging Tables* into a new custom node by fllowing the below steps: 
 - Double click on the hexagon *SQL Server Procedures*.
 - Select the 12 SQL Server Procedures (Ctrl + Left Click).
 - Right click on *Associate to custom aggregation*.
@@ -108,4 +108,4 @@ Close the view and refresh the browser to see the full picture.
 
 ![Custom View](/images/Recipe_AggregationResult.png)
 
-The logging nodes will be displayed and **you can now visualize the adherence to the Logging Tables and their callers, which will help you identify which components to modify when replacing this custom layer by a Cloud Logging Service such as AWS CloudWatch.**
+The logging nodes will be displayed and **you can now visualize the adherence between the existing components in charge of the logs and the rest of the application, which will help you identify which components to modify when replacing this custom logging layer by a Cloud Logging Service such as AWS CloudWatch.**
