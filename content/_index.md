@@ -22,7 +22,7 @@ CAST Imaging also provides visibility of the adherence between applications: API
 
 In this workshop, you will learn how to use CAST Imaging to navigate the technical architecture of custom applications, helping you to determine how to integrate AWS services in a rapid and safe way. 
 
-{{% notice warning %}}
+{{% notice info %}}
 This workshop will cover the consumption of CAST Imaging dashboard through practical exercises utilizing existing applications and highlighting the benefits of CAST insights in Application Modernization context.
 This workshop will not cover the production of CAST Imaging dashboard involving the reverse-engineering of the application source code.
 {{% /notice %}}
