@@ -53,7 +53,7 @@ Those are all components involved with the table MERCHANT_USER_INFORMATION, mean
 
 We have seen in the previous workshop how to Save, Document and Export a view in CAST Imaging.
 
-{{% notice info %}}
+{{% notice tip %}}
 Another way to save your work is to attach a *tag* to the nodes of interest. The *tag* is a keyword which can be used to find nodes through the *Search* feature > *Search a tag*. *Tags* are shared within all CAST Imaging users of the same application and appear in the properties of the node.
 Learn more on the *[Tags](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Working+with+tags)*.
 {{% /notice %}}

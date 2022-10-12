@@ -50,7 +50,7 @@ Now, there are several actions in CAST Imaging to share what you observed and re
 
 ### Save the view
 
-{{% notice info %}}
+{{% notice tip %}}
 You can save a view in CAST Imaging by clicking on *Save a View* in the left hand menu. This allows you to retrieve, modify, document the view later on.
 The saved views are visible to all CAST Imaging users of the same application and appear in the properties of all nodes contained in the saved view.
 Learn more on *[Saving views](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Saving+and+accessing+saved+views)*.
@@ -63,7 +63,7 @@ You can display the views saved previously from the left hand Menu Bar.
 
 ### Document the view
 
-{{% notice info %}}
+{{% notice tip %}}
 You can save your observations on a view in CAST Imaging for other team members to rapidly understand the situation.
 This allows to display a note whenever the selected nodes will be displayed on the screen, and it also allows to search by *Document* name and retrieve those nodes later on.
 Learn more on the *[Document-IT](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Using+the+Document-It+feature)* feature.
