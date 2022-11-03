@@ -1,10 +1,10 @@
 --- 
-title: "Modernize non-native architectures with CAST Imaging" 
+title: "Modernize Applications to AWS Architectures with CAST Imaging" 
 chapter: true 
 weight: 1 
 --- 
 
-# Modernize non-native architectures with CAST Imaging
+# Modernize Applications to AWS Architectures with CAST Imaging
 
 ![CAST Logo](/images/CAST_Logo.png) 
 
