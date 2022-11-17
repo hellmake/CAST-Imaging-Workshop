@@ -1,5 +1,5 @@
 ---
-title: "Workshop environment" 
+title: "Workshop Environment" 
 chapter: true
 weight: 2 
 ---

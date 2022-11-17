@@ -27,6 +27,10 @@ This workshop will cover the consumption of CAST Imaging dashboard through pract
 This workshop will not cover the production of CAST Imaging dashboard involving the reverse-engineering of the application source code.
 {{% /notice %}}
 
+### Target Audience
+
+Executing this workshop to completion does not require any specific skills. The insights provided by CAST Imaging are targeted towards software architects, therefore some of the concepts will be more meaningful to those with some programming experience.
+
 ## Workshop Agenda
 
 1. How CAST Imaging works
@@ -38,6 +42,12 @@ This workshop will not cover the production of CAST Imaging dashboard involving 
 4. Wrap-up
 
 Plan on taking about 2 hours to complete the full workshop.
+
+### Resources requirements and cost
+
+The use of the CAST Imaging demonstration platform for the purposes of this workshop is completely free.
+
+No resources are required from the trainees: everything runs on our infrastructure, and there's no cleaning up to be done on your part.
 
 ## Additional Help 
 
