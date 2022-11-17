@@ -4,7 +4,7 @@ chapter: true
 weight: 2 
 ---
 
-# Workshop introduction
+# Workshop First Steps
 
 The most common motions taking place in application modernization and refactoring fall under the following categories:
 
