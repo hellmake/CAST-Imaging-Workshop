@@ -1,5 +1,4 @@
-var userToken = '6b2c9ab7-21c1-420a-bee2-422e8639b58f';
-var serverUrl = 'https://demo.casthighlight.com';
+var apiUrl = 'https://p4jgxem.execute-api.us-east-1.amazonaws.com/prod';
 
 $(".formReset").click(function(){
 	$("#userEmail").val('');
@@ -15,67 +14,36 @@ $("#inviteUserBtn").click(function() {
 			alert("A valid email is required to complete the registration.");
 		}
 		else {
+			$("#successData").hide();
 			$("#loadingScreen").fadeIn();
 			$("#preparingData").fadeIn();
-			var payload = '[{"name": "'+userEmail+'","clientRef": "'+userEmail+'","parent": {"id": "21224"}}]';
-			var createdDomainId;
-			var statusCode = 'Start'
-			$.ajax({
-				async: false,
-				url: serverUrl+"/WS2/domains/21224/domains",			
-				type: 'POST',
-				dataType: 'json',
-				data: payload,
-				contentType: 'application/json; charset=utf-8',
-				success: function (result) {
-												
-					createdDomainId = result.result[0].id;
-					statusCode = statusCode + ' - CreatedDomain ' + createdDomainId
-					userEmail = userEmail.split('@');
-					userEmail = userEmail[0]+'+AWS@'+userEmail[1];
-
-					var payload = '[{"email": "'+userEmail+'","status": "activated","roles": [{"domain_id": "'+createdDomainId+'","role": "manager"},{"domain_id": "21225","role": "viewer"}]}]';
-					
-					$.ajax({
-						async: false,
-						url: serverUrl+"/WS2/domains/21224/users",
-						
-						type: 'POST',
-						dataType: 'json',
-						data: payload,
-						contentType: 'application/json; charset=utf-8',
-						success: function (result) {
-							$("#successData").fadeIn();
-							statusCode = statusCode + ' - Invited ' + userEmail
-						},
-						beforeSend: function(xhr, settings) { xhr.setRequestHeader('Authorization','Bearer '+userToken); },
-						error: function (xhr, status){	
-							console.log('err::User Invite');
-							statusCode = statusCode + ' - InviteError'
-						}						
-					});
-				},
-				beforeSend: function(xhr, settings) { xhr.setRequestHeader('Authorization','Bearer '+userToken); }, //set tokenString 
-				error: function (xhr, status) {
-					console.log('err::Domain Creation');
-					statusCode = statusCode + ' - DomainError'
-				}				
+			var firstName = $("#firstName").val();
+			var lastName = $("#lastName").val();
+			var companyName = $("#companyName").val();
+			var country = $("#country").val();
+			 // instantiate a headers object
+            var myHeaders = new Headers();
+            // add content type header to object
+            myHeaders.append("Content-Type", "application/json");
+            // using built in JSON utility package turn object to string and store in a variable
+            var payload = JSON.stringify({"userEmail":userEmail,"firstName":firstName,"lastName":lastName,"companyName":companyName,"country":country});
+            // create a JSON object with parameters for API call and store in a variable
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: payload,
+                redirect: 'follow'
+            };
+            // make API call with parameters and use promises to get response           
+			let response = fetch(apiUrl, requestOptions).then(
+			function(value){
+				$("#successData").fadeIn();
+			},
+			function(error){
+				alert("Request-Error: " + response.text + ". Please try again or contact us at AWS.contact-me@castsoftware.com .");
+				$("#loadingScreen").fadeOut();
 			});
-			var mailMessage = 'First Name: ' + $("#firstName").val() + '\n Last Name: ' + $("#lastName").val() + '\n Company: ' + $("#companyName").val() + '\n Country: ' + $("#country").val() + '\n email: ' + userEmail + '\n The enrollment into the portfolio finished with status ' + statusCode;
-			payload = 'subject=AWS%20Workshop%20Enrollment&accessKey=0073d362-3256-4706-979c-69960d8620ba&message='+mailMessage;
-			$.ajax({
-				url: 'https://api.staticforms.xyz/submit',
-				type: 'POST',
-				dataType: 'json',
-				data: payload,
-				success: function(result) {
-				  console.log('Mail sent');
-				},
-				error: function(xhr, resp, text) {
-				  console.log('err::Mail Warning')
-				}
-			 });
-			$("#preparingData").hide();	
+			$("#preparingData").hide();
 		};
 	}
 });
