@@ -1,4 +1,4 @@
-var apiUrl = 'https://p4jgxem.execute-api.us-east-1.amazonaws.com/prod';
+var apiUrl = 'https://qau3ohw12e.execute-api.us-east-1.amazonaws.com/prod';
 
 $(".formReset").click(function(){
 	$("#userEmail").val('');
