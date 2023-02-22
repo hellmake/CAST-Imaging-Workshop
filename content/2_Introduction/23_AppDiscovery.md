@@ -6,60 +6,48 @@ weight: 3
 
 # Application Discovery 
 
-**Objective**: Before you begin the modernization process, you must first understand the as-is architecture of the system and understand: Which are the technologies being used ? How do they interact ? Are there isolated layers which code is not referenced ? What are the frameworks in place and are they compatible with the target platform ? etc. 
+**Objective**: Before you begin the modernization process, you must first understand the as-is architecture of the system and understand: Which are the technologies being used? How do they interact? Are there isolated layers which code is not referenced? What are the frameworks in place and are they compatible with the target platform? etc. 
 
-## Understanding the technologies and size 
+## The applications we'll walk through
 
-Select the application named ***Demo_Express***.
-Information on the application size, number of lines of code, number of objects, etc. are displayed along with several navigation scenarios.
+For the purposes of this workshop, we are going to discover 2 applications: one of them is a Java/MySQL online store application and the other one is a .NET-based cooking recipes management webapp.
 
-Choose the scenario *Explore the interdependencies* > *Between technology objects* to explore the objects composing this application grouped by technology types.
-![Welcome](/images/DemoExpress_welcome.png)
+## Understanding the application technologies and size 
 
+Select the application named ***eCommerce***.
+Information on the application size, number of lines of code, number of objects, etc. are displayed along with several navigation scenarios to drill-down and discover the application and its dependencies.
+
+![Welcome](/images/eCommerce_welcome.png)
+
+Choose the ***Application Architecture*** scenario to explore the objects composing this application grouped by technology types. You can drill down in the different levels of abstraction describing the several layers of the application architecture:  
+
+- Level 3: you learn about the services and coordination layers in place and their interaction 
+- Level 4: you can see all the technologies and frameworks composing the application and understand how the Business Logic is accessing the Database Layer, what composes the Presentation Layer, and the architecture specifics (batches, coordination layers, legacy frameworks, etc.) 
+- Level 5: the object types are displayed: this is the lowest level of visualization for this view. You can see the number of low level components inside each node (classes, tables, pages, etc.)
+
+![eCommerce Overview](/images/eCommerce_level3.png)
 
 ## Understanding the architecture 
 
-You are now positionned at at the Level 5 of the navigation perspective.
+Choose the Level 5 of the navigation perspective. You see that *eCommerce* is composed of a UI layer in JSP and Javascript. Struts and Hibernate are also in use with a MySQL database. 
 
-You see that ***Demo_Express*** application is composed of Cobol and Java which can raise up a few questions: 
-- What are the communication mechanisms between Cobol and Java ?
-- What is the role of the Cobol layer ?
-- How is the DB2 database consumed ?
+![eCommerce Level 5](/images/eCommerce_level5.png) 
 
-To answer those questions, you would need to explore the architecture in more details down to reading the source code.
+CAST Imaging provides navigation capabilities to help you understand the inner architecture of the application and answer questions such as: 
+- Which are the JSP pages still using Struts? 
+- How is the MySQL data consumed? 
+- The *Log4j* component requires an urgent upgrade due to a security vulnerability. Which components would be impacted by this upgrade? 
 
+{{% notice tip %}}
+You can change the Graph Layout to ***Hierarchical*** or ***Force*** to have a better display.\
+You can double click on the edge between two nodes to visualize the detailed references.\
+You can double click on the node itself to visualize the sub-nodes and explore the dependencies.
+{{% /notice %}}
 
-![Screenshot DemoExpress Level 5](/images/DemoExpress_Level5.PNG) 
-
-:memo: By exploring the view, you can identify the below characteristics of ***DemoExpress*** application that will be useful for the rest of the journey: 
-- a Presentation Layer with JavaScript and HTML, JSP Pages 
-- the implementation layer contains Struts and Java
-- you can see that Apache Log4j is used as logging framework  
-- the DB2 database is accessed only by the Cobol Programs mostly through DB2 Views (280 References from Cobol Programs to DB2 Views versus 10 References from Cobol Programs to DB2 Tables)
-
-You will now investigate the 34 references between Java and Cobol.
-
-Double click on the edge between the Java Classes and the Cobol Programs, you can change the Graph Layout to *Sequential* to have a better display.
-![Screenshot DemoExpress Level 5](/images/DemoExpress_JavaCobolall.png)
-You can see that for one Cobol Program, there is one Java Method calling it, the parent Java Class is also represented with a dotted line towards the Cobol Program, representing the escalated reference with the Cobol Program:
-![Screenshot DemoExpress Level 5](/images/DemoExpress_JavaCobol.png)
+Double-click on the ***API Apache Log4j*** node. On the left-hand menu, you can change the ***Drill Down Options*** to ***Children + caller/callee*** to visualize the Log4J classes and their direct callers/callees.  
+ ![Log4j investigation](/images/eCommerce_log4j.png)
  
-You can now right click on the edge between one Java Method and one Cobol Program and *Show the source code* to identify which mechanism is used is this link and you can see that this is very similar to JDBC calls: 
-	
-	public void execute(IDbRequest dbRequest, IDbResponse dbResponse) 
-	throws DBException, SQLException {
-		SPName = "COBOL_PROGRAM_NAME";
-		...
-		cstmt = con.prepareCall("{ call " + QUAL + "COBOL_PROGRAM_NAME(?,?,?,?,?,?,?) }");
-		...				
-		rs = cstmt.executeQuery();
-		...
-	}
-	
-:memo: In the application ***Demo_Express***, the Cobol Program operates as a Stored Procedure to execute the database calls sent by the Java layer.
-
-
-### Application Recipe
+## The Recipe Application
 
 Now select the application named ***Recipe*** and apply the same navigation steps than above.
  ![Screenshot Recipe Level 5](/images/Recipe_Level5.png)
@@ -82,7 +70,6 @@ Now hide the type *SQL Server Tables* in the right hand legend to render a more 
 :memo: This confirms that the SQL Server Procedures are really used by the C# layer, the code they contain needs to be maintained.
 
 ![Screenshot Recipe Level 5](/images/Recipe_SQLProcDetails.png)
-
 
 **You now have, rapidly in a few clicks, gathered valuable insights on the applications:** 
 - Source Code size and list of frameworks

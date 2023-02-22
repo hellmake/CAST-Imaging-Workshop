@@ -12,7 +12,7 @@ weight: 1
 
 CAST Imaging reverse-engineers database structures, code components, and interdependencies in complex software systems, down to the tiniest details into interactive maps. CAST Imaging creates accurate, interactive architecture blueprints allowing you to navigate through a complex system, perform precise analysis of the software structure, and make better decisions on application architecture. 
 
-CAST Imaging automatically understands the technology stack, application layers, and adherence between the components with 5 levels of granularity - from abstracted services to object level granularity. Thanks to the generation of the application end-to-end transactions, you can quickly view the entire flow starting from UI, traversing through several intermediate layers and ending with the database. 
+CAST Imaging automatically understands the technology stack, application layers, and adherence between the components with *[5 levels of granularity](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+GUI+-+Toolbar+menu+options)* -- from abstracted services to object level granularity. Thanks to the generation of the application end-to-end [transactions](https://doc.castsoftware.com/display/ONBRD/Transaction+and+Function+Point+management), you can quickly view the entire flow starting from UI, traversing through several intermediate layers and ending with the database. 
 
 CAST Imaging acts like a technical knowledge base of your application providing: search capabilities ; documentation features to enrich the technical objects with user comments ; tagging feature to attach keywords to technical objects ; aggregation features to create functional views above the technical objects or design your to-be architecture and understand the bridges and gaps to be handled etc. 
 
@@ -41,14 +41,15 @@ Executing this workshop to completion does not require any specific skills. The 
 
 4. Wrap-up
 
-Plan on taking about 2 hours to complete the full workshop.
+
 
 ### Resources requirements and cost
 
-The use of the CAST Imaging demonstration platform for the purposes of this workshop is completely free.
-
+{{% notice info %}}
+Plan on taking about 2 hours to complete the full workshop.\
+The use of the CAST Imaging demonstration platform for the purposes of this workshop is completely free.\
 No resources are required from the trainees: everything runs on our infrastructure, and there's no cleaning up to be done on your part.
-
+{{% /notice %}}
 ## Additional Help 
 
 For any additional help, please reach out to CAST Support Team: AWS.contact-me@castsoftware.com

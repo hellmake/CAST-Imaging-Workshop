@@ -16,6 +16,11 @@ The available reports are listed below and are available in CSV, XLSX and JSON f
 
 ![Custom View](/images/UsefulTools_1.png)
 
+Let's take an example: for the ***Recipe*** application, we're interested in knowing which are the most central artifacts in the codebase. In the ***Reports*** pop-up, we can choose the ***REFERENCES*** section and click on the ***XLSX*** download button. 
+![Custom View](/images/UsefulTools_2.png)
+
+CAST Imaging will indicate that the report is being generated, and once it's ready, the download will start automatically. The wealth of information that can be collected from those reports is quite significant.
+
 Learn more on *[CAST Imaging built-in reports here](https://doc.castsoftware.com/display/IMAGING/User+Guide+-+Reports)*.
 
 ### Advanced search

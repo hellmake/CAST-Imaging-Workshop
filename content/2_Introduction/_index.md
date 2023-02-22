@@ -16,5 +16,3 @@ The most common motions taking place in application modernization and refactorin
 	- Decouple a community of components and identify microservice candidates or better separation of concerns among business features.
 
 Following this path, after going through a prerequisite course, you will first learn how to discover the inner structure of an application with CAST Imaging and extract valuable insights needed to go further in the modernization scenarios.
-
-Plan on taking about 2 hours to complete the full workshop.
