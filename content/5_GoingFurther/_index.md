@@ -35,3 +35,9 @@ Watch the *[recording](https://learn.castsoftware.com/thank-you/monoliths-micros
 ### Training
 
 Submit a request for CAST Imaging online courses by contacting us: AWS.contact-me@castsoftware.com
+
+### Optional Modules 
+
+Continue your journey through modernization use cases on/to AWS utilizing CAST Imaging capabilities: 
+
+- Transform a Monolith to Microservices 
