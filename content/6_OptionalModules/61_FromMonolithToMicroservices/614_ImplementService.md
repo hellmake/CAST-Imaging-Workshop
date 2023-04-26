@@ -12,7 +12,7 @@ The new microservice will manage its own database defined by the data group iden
 
 The other data used by the Booking functionality are good candidates for the next iteration. 
 
-Choose the scope _Transactions_ on the left hand menu to display the transaction named ***rest/bookings***.  
+Choose the scope _Transactions_ on the left hand menu to display the transaction named ***bookings/.***  
 
 Based on the transaction call graph, you can immediately pinpoint other data that the new microservice will need to get access to: TicketPrice, Performance, Section, Section Allocation.
 

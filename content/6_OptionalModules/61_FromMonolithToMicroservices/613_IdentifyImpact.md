@@ -45,7 +45,9 @@ Finally, right click on ***Booking*** table and select _Highlight_ > _Path_.
 
 Before rewriting the business logic in the new microservice, we can identify which improvements could be applied to the new service on its robustness, performance or security. 
 
-CAST Imaging provides an _Insights_ view to immediately highlight components having structural flaws, i.e. critical violations to ***ISO-5055*** best practices. 
+{{% notice tip %}}
+CAST Imaging provides an _Insights_ view to immediately highlight components having structural flaws, i.e. critical violations to ***ISO-5055*** best practices.  
+{{% /notice %}}
 
 Click on the _Insights_ part of the right hand menu and select _Structural Flaws_. 
 

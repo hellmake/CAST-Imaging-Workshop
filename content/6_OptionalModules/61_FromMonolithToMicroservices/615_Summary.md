@@ -1,5 +1,5 @@
 ---
-title: "M2M Summary"
+title: "Mono2Micro Summary"
 chapter: true
 weight: 5
 ---
