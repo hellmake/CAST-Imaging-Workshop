@@ -46,7 +46,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]] 
 name = "<i class='fas fa-graduation-cap'></i> CAST Imaging Foundation Course"
-url = "https://help.castsoftware.com/hc/en-us/articles/360013914719-CAST-University-for-Imaging"
+url = "https://help.castsoftware.com/hc/en-us/articles/10554604436754-CAST-University-for-CAST-Imaging"
 weight = 10
 
 [[menu.shortcuts]] 
